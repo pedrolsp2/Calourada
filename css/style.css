@@ -6,13 +6,24 @@
 }
 
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*         HEADER         */
+h1, h2{
+  color: var(--cor01);
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+p{
+  color: #525354;
 }
 
 header {
@@ -22,6 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -33,7 +45,8 @@ header {
 }
 
 .logo img {
-  width: 200px;
+  width: 150px;
+  backdrop-filter: multiply;
 }
 
 .menu {
@@ -42,9 +55,29 @@ header {
 }
 
 nav a {
-    color: var(--cor01);
-    font-weight: bold;
+  color: var(--cor01);
+  font-weight: bold;
   cursor: pointer;
+  padding: 0rem 1.5rem;
+  transition: all 350ms;
+}
+ 
+nav :not(:last-child){
+  border-right: 2px solid var(--cor02);
+} 
+
+nav a:hover{
+  color: var(--cor02);
+  transition: all 350ms;
+}
+
+ul {
+  color: fff;
+  display: flex; 
+  list-style: none;
+  list-style: none;
+  padding: 1rem;
+  transition: all 550ms;
 }
 
 button {
@@ -58,7 +91,7 @@ button {
 }
 
 .active {
-  color: var(--cor01);
+  color: #fff;
   transform: rotate(360deg);
   transition: all 300ms;
 }
@@ -67,22 +100,150 @@ button {
   position: relative;
   margin-left: -25px;
   font-size: 44px;
-  color: #fff !important;
+  color: var(--cor01) !important;
   content: '×';
 }
 
-ul {
-  color: fff;
+
+/*         FIM HEADER         
+           BEM VINDO
+*/
+
+section#bem-vindo{
+  width: 100%;
+  background: url(../img/background1.jpg) no-repeat  center fixed;
+  background-size: cover;
+  height: calc(100vh - 60px); 
+}
+
+section#bem-vindo img{
+  width: 350px;
+  height: 350px;
+  margin-top: 6rem;
+}
+
+section#bem-vindo h1{
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin: 5rem 3rem 0rem;
+}
+
+.container{
   display: flex;
-  gap: 2rem;
-  list-style: none;
-  list-style: none;
-  padding: 1rem;
-  transition: all 550ms;
+  justify-content: space-between; 
+  max-width: 1400px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+/*   main  */
+
+main{
+  background: url(../img/back-main.png) repeat-y;
+  max-width: 1100px;
+  min-height: 600px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+section#novo-cidade{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0rem;
+  flex-wrap: wrap; 
+}
+
+section#novo-cidade h1{
+  margin: 0;
+  text-align: center;
+}
+
+section#novo-cidade p{
+  text-align: center;
+}
+
+section#novo-cidade article:first-child{
+  max-width: 50%;
+}
+section#estabelecimento{
+  margin: 10rem 0;
+}
+section#estabelecimento h1{
+  text-align: center;
+}
+
+.card-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card{
+  width: 15.625rem;
+  height: 15.625rem;
+  transition: all 350ms;
+}
+
+.card:hover{
+  transform: scale(105%);
+  transition: all 350ms;
+}
+
+.conteudo-card{
+  height: 13rem;
+  border-radius:8px 8px 0px 0px ;
+  background-color: #b1a9a9a1;
+}
+
+.links{
+  padding: 0 1.5rem;
+  background-color: var(--cor01);
+  height: 2.625rem;
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section#gp-wp h1, section#gp-wp p{
+  text-align: center;
+}
+
+.cursos article{
+  margin: 5rem 0;
+}
+
+details{
+  width: 300px;
+  border: 1px solid #BBBBBB; 
+  border-radius: 8px;
+}
+
+summary{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+h3{
+  color: var(--cor01);
+  padding-right: 2rem;
 }
 
 
-@media screen and (max-width: 600px) {
+
+
+
+@media screen and (max-width: 700px) {
+  /*         HEADER         */
+  h1{
+    text-align: center;
+  }
   button {
     display: block;
     visibility: visible;
@@ -96,6 +257,9 @@ ul {
     transition: all 500ms;
   }
 
+  nav li{
+    border: 0px !important;
+  }
   ul {
     position: absolute;
     left: 0;
@@ -110,18 +274,114 @@ ul {
 
   li {
     padding: 1rem;
-    border-bottom: 1px solid var(--cor01);
+    border-bottom: 1px solid #4a6e85;
   }
 
   li:hover {
-    background-color: var(--cor01);
+    background-color: #4a6e85;
     transition: all 250ms;
   }
 
   li a {
-    font-size: 28px;
+    font-size: 24px;
     color: #fff !important;
   }
 
+  .logo img {
+    width: 100px;
+  }
 
+  /*         FIM HEADER        
+              BEM VINDO
+*/
+
+section#bem-vindo{
+  background: url(../img/header-back.png) no-repeat  center fixed;
+  background-size: cover;
+  display: flex;
+}
+
+section#bem-vindo img{
+  width: 350px;
+  height: 350px;
+  margin-top: -10rem;
+}
+
+section#bem-vindo h1{
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+section#novo-cidade{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#novo-cidade article:first-child{
+  max-width: 100% !important;
+}
+.card{
+  width: 20rem;
+  height: 20rem;
+  transition: all 350ms;
+}
+.conteudo-card{
+  height: 17rem;
+  border-radius:8px 8px 0px 0px ;
+  background-color: #b1a9a9a1;
+}
+
+.links{
+  padding: 0 1.5rem;
+  background-color: var(--cor01);
+  height: 3rem;
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1400px) {
+
+  section#bem-vindo img{
+    width: 500px !important;
+    height: 500px !important;
+    margin-top: 6rem;
+  }
+  
+  section#bem-vindo h1{
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    margin: 5rem 0rem 0rem;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1600px;
+    min-height: 800px;
+  }
+  
 }
