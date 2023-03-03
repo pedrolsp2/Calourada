@@ -188,14 +188,16 @@ section#estabelecimento h1{
   height: 15.625rem;
   transition: all 350ms;
 }
+ 
 
 .card:hover{
   transform: scale(105%);
   transition: all 350ms;
 }
 
-.conteudo-card{
+.conteudo-card, #rest{
   height: 13rem;
+  width: 15.625rem;
   border-radius:8px 8px 0px 0px ;
   background-color: #b1a9a9a1;
 }
@@ -214,25 +216,62 @@ section#gp-wp h1, section#gp-wp p{
   text-align: center;
 }
 
+.cursos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; 
+}
+
 .cursos article{
-  margin: 5rem 0;
+  margin: 1rem 0; 
 }
 
 details{
-  width: 300px;
+  width: 320px;
   border: 1px solid #BBBBBB; 
-  border-radius: 8px;
+  border-radius: 8px; 
+  position: relative;
+} 
+
+details a{
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 10px;
+  text-decoration: none;
+  color: var(--cor01);
+}
+
+details a{
+  border-top: 1px solid #BBBBBB; 
+}
+details a:hover{
+  background-color: #d5efff; 
+} 
+
+.rotate{
+  transform: rotate(180deg) !important;
+  transition: all 200ms;
 }
 
 summary{
-  display: flex;
+  display: flex; 
   gap: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; 
+  line-height: 2rem;
 }
 
 h3{
-  color: var(--cor01);
-  padding-right: 2rem;
+  color: var(--cor01); 
+}
+
+.up{
+  transform: rotate(0deg);
+  position: absolute;
+  top: 1.6rem;
+  right: 10px;
+  transition: all 200ms;
 }
 
 
@@ -338,8 +377,9 @@ section#novo-cidade article:first-child{
   height: 20rem;
   transition: all 350ms;
 }
-.conteudo-card{
+.conteudo-card, #rest{
   height: 17rem;
+  width: 20rem;
   border-radius:8px 8px 0px 0px ;
   background-color: #b1a9a9a1;
 }

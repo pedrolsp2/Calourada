@@ -6,3 +6,8 @@ function menu() {
      const btnMenu = document.getElementById('botao-menu');
      btnMenu.classList.toggle('active')
  }
+
+ function rotate(id){
+    var curso = document.getElementById(id);
+    curso.classList.toggle('rotate')
+ }
