@@ -297,6 +297,9 @@ summary{
   padding: 1rem 1rem; 
   line-height: 2rem;
 }
+summary::-webkit-details-marker {
+  display: none;
+}
 
 h3{
   color: var(--cor01); 
