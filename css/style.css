@@ -39,6 +39,8 @@
   box-shadow: -2px 0px 4px rgba(145, 9, 9, 0.25);
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +60,7 @@ h1, h2{
 
 p{
   color: #525354;
+  text-align: justify;
 }
 
 header {
@@ -142,6 +145,7 @@ button {
 /*         FIM HEADER         
            BEM VINDO
 */
+
 
 section#bem-vindo{
   width: 100%;
