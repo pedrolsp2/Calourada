@@ -23,9 +23,9 @@
 
         <nav class="nav">
             <ul id="nav" class="menu-nav toggle">
-                <li><a href="#estabelecimento">Comercios Locais</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
                 <li><a href="#grupos">Grupos WhatsApp</a></li>
-                <li><a href="#grupos">Times Universitários</a></li>
+                <li><a href="#comercio-local">Comercios Locais</a></li>
             </ul>
         </nav><button id="botao-menu" onclick="menu()">☰</button>
     </header>
@@ -50,11 +50,9 @@
             tem a oferecer! Confira no link abaixo o cronograma para a semana calourosa. 
         </p>
 
-        <section id="cronograma-semana">
-            <a href="">
-                <button id="botao-cronograma">Confira o cronograma</button>
-            </a>
-        </section>
+            <div class="btn-cronograma" id="cronograma">
+            <a href="" id="botao-cronograma">Confira o cronograma</a>
+            </div>
 
         <section id="novo-cidade">
             <article>
@@ -65,6 +63,7 @@
                 <img src="img/3dwm.png" alt="Pensativa" width="250">
             </article>
         </section>
+
         <section id="grupos">
             <div class="cursos">
                 <article>
@@ -197,7 +196,7 @@
                             <h4>Entre no grupo de Bixos 2023</h4>
                         </a>
                         <a href="https://www.facebook.com/SIUEMGFRUTAL">
-                            <img src="img/face.svg" alt="Facebook">
+                            <img src="img/facebook-azul.svg" alt="Facebook">
                             <h4>Acompanhe no Facebook</h4>
                         </a>
                         <a href="https://www.instagram.com/siuemgfrutal/" target="_blank"><img src="img/instagram.svg" alt="Insta">
@@ -240,11 +239,11 @@
                             <h4>Bixos UEMG 2023</h4>
                         </a>
                         <a href="https://www.facebook.com/uemgunidadefrutal">
-                            <img src="img/face.svg" alt="Facebook">
+                            <img src="img/facebook-azul.svg" alt="Facebook">
                             <h4>UEMG Unidade Frutal</h4>
                         </a>
                         <a href="https://www.facebook.com/groups/bixosuemgfrutal">
-                            <img src="img/face.svg" alt="Facebook">
+                            <img src="img/facebook-azul.svg" alt="Facebook">
                             <h4>Bixos UEMG 2023</h4>
                         </a>
 
@@ -253,11 +252,13 @@
             </div>
         </section>
 
-        <section id="novo-cidade">
-            <article>
+        <section id="novo-cidade" class="bar-restaurante">
+            <article id="comercio-local">
                 <h1>Chegando na cidade?</h1>
                 <p>Não se preocupe! aqui está um breve guia com bares e restaurantes para conhecer!</p>
             </article>
+
+        </section>
             <div class="card-section">
 
                 <div class="card">
@@ -280,15 +281,16 @@
                         <a href=""><img src="img/face.svg" alt="Facebook"></a>
                         <a href=""><img src="img/maps.svg" alt="Localização"></a>
                     </div>
-                </div>
-            
-        </section>    
+                </div> 
+            </div>
 
-        <section id="novo-cidade">
+        <section id="novo-cidade" class="moradia">
             <article>
                 <h1>Procurando moradia?</h1>
                 <p>Aqui está uma lista com repúblicas e imobiliárias na cidade.</p>
             </article>
+        </section>
+
             <div class="card-section">
 
                 <div class="card">
@@ -314,8 +316,7 @@
                 </div>
 
             </div>
-            
-        </section> 
+
         <section id="estabelecimento">
             
         </section>
@@ -335,9 +336,9 @@
         <article>
             <h2>Links Úteis</h2>
             <p><a href="#">Inicio</a></p>
-            <p><a href="#estabelecimento">Comercios Locais</a></p>
+            <p><a href="#comercio-local">Comercios Locais</a></p>
             <p><a href="#grupos">Grupos WhatsApp</a></p>
-            <p><a href="#grupos">Times Universitários</a></p>
+            <p><a href="#cronograma">Cronograma</a></p>
             <p><a href="https://www.uemg.br/frutal" target="_blank">Site UEMG</a></p>
         </article>
     </footer>
