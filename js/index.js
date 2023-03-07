@@ -25,3 +25,12 @@ window.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+function verMais(){
+  var div = document.querySelector('.moradias');
+  var btn = document.getElementById('ver-mais');
+
+  div.classList.toggle('off')
+  btn.innerHTML = "Ver Menos"
+}
