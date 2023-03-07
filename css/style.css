@@ -208,11 +208,16 @@ main{
   padding: 0 1rem;
 }
 
+.wd{
+  width: 100% !important;
+}
+
 section#novo-cidade{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem !important;
   margin: 3rem 0rem;
   flex-wrap: wrap; 
 }
@@ -515,7 +520,7 @@ footer{
   background: linear-gradient(99.66deg, #3C6178 7.39%, #61A0C8 101.62%);
   display: block; 
 }
-
+ 
 .crp{
   position: relative; 
   bottom: 0px !important;
