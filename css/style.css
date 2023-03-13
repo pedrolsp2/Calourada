@@ -355,9 +355,11 @@ footer{
 
 .crp{
   position: absolute; 
-  bottom: 30px;
+  bottom: 5px;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
 }
 
 .crp h3{
@@ -520,18 +522,9 @@ section#novo-cidade article:first-child{
 footer{
   background: linear-gradient(99.66deg, #3C6178 7.39%, #61A0C8 101.62%);
   display: block; 
+  padding-bottom: 160px;
 }
- 
-.crp{
-  position: relative; 
-  bottom: 0px !important;
-  left: 0 !important;
-  transform: translate(0, 0) !important;
-}
-.crp h3{ 
-  text-align: center;
-  padding: 10px;
-}
+  
 
 
 footer article{ 
